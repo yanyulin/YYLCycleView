@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01A168A15BD3ACFC078F0B2F /* Pods_YYLCycleView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514452BABE22A98925853ACD /* Pods_YYLCycleView_Tests.framework */; };
+		37B418DF1F1DB19000EC446C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 37B418DB1F1DB19000EC446C /* .gitkeep */; };
+		37B418E41F1DB2D500EC446C /* YYLCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B418E31F1DB2D500EC446C /* YYLCycleView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07CC4B8019DEDFBBE94AF9A5 /* YYLCycleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YYLCycleView.podspec; path = ../YYLCycleView.podspec; sourceTree = "<group>"; };
+		07CC4B8019DEDFBBE94AF9A5 /* YYLCycleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYLCycleView.podspec; path = ../YYLCycleView.podspec; sourceTree = "<group>"; };
 		2497B0A583C9D33D16CB3B1B /* Pods-YYLCycleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLCycleView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYLCycleView_Example/Pods-YYLCycleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2B674BC383CF13377C47B510 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2B674BC383CF13377C47B510 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		37B418DB1F1DB19000EC446C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		37B418E21F1DB2D500EC446C /* YYLCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYLCycleView.h; sourceTree = "<group>"; };
+		37B418E31F1DB2D500EC446C /* YYLCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYLCycleView.m; sourceTree = "<group>"; };
 		514452BABE22A98925853ACD /* Pods_YYLCycleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYLCycleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* YYLCycleView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYLCycleView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +68,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E7153B327F1695CFF6546CC /* Pods_YYLCycleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYLCycleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B2F5CC8D781509E8D41C7790 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B2F5CC8D781509E8D41C7790 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B7F0FD0F723D04A2BC0DBB78 /* Pods-YYLCycleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLCycleView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYLCycleView_Tests/Pods-YYLCycleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB5C96FD67A43D2A479E2C9 /* Pods-YYLCycleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLCycleView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYLCycleView_Example/Pods-YYLCycleView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FFD0C021ED66CE49CF9A4B7A /* Pods-YYLCycleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLCycleView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYLCycleView_Tests/Pods-YYLCycleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B418D91F1DB19000EC446C /* YYLCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				37B418DA1F1DB19000EC446C /* Assets */,
+				37B418DC1F1DB19000EC446C /* Classes */,
+			);
+			name = YYLCycleView;
+			path = ../YYLCycleView;
+			sourceTree = "<group>";
+		};
+		37B418DA1F1DB19000EC446C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				37B418DB1F1DB19000EC446C /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		37B418DC1F1DB19000EC446C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37B418E21F1DB2D500EC446C /* YYLCycleView.h */,
+				37B418E31F1DB2D500EC446C /* YYLCycleView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		42DDCB2143A4F1E5CCD537C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +141,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				37B418D91F1DB19000EC446C /* YYLCycleView */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for YYLCycleView */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -281,6 +314,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				37B418DF1F1DB19000EC446C /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -396,6 +430,7 @@
 			files = (
 				6003F59E195388D20070C39A /* YYLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YYLViewController.m in Sources */,
+				37B418E41F1DB2D500EC446C /* YYLCycleView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

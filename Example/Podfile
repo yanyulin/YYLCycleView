@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'YYLCycleView_Example' do
-  pod 'YYLCycleView', :path => '../'
+#  pod 'YYLCycleView', :path => '../'
 
   target 'YYLCycleView_Tests' do
     inherit! :search_paths
