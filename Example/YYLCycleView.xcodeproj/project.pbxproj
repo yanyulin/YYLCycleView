@@ -283,6 +283,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yanyulin;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = R8A898NDDV;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -559,6 +562,7 @@
 			baseConfigurationReference = 2497B0A583C9D33D16CB3B1B /* Pods-YYLCycleView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R8A898NDDV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYLCycleView/YYLCycleView-Prefix.pch";
 				INFOPLIST_FILE = "YYLCycleView/YYLCycleView-Info.plist";
@@ -574,6 +578,7 @@
 			baseConfigurationReference = DDB5C96FD67A43D2A479E2C9 /* Pods-YYLCycleView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R8A898NDDV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YYLCycleView/YYLCycleView-Prefix.pch";
 				INFOPLIST_FILE = "YYLCycleView/YYLCycleView-Info.plist";

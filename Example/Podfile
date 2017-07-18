@@ -3,6 +3,8 @@ use_frameworks!
 target 'YYLCycleView_Example' do
 #  pod 'YYLCycleView', :path => '../'
 
+  pod 'SDWebImage'
+    
   target 'YYLCycleView_Tests' do
     inherit! :search_paths
 

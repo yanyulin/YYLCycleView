@@ -8,21 +8,37 @@
 
 #import <UIKit/UIKit.h>
 
+@class YYLCycleView;
+
 //分页控件位置的枚举
 typedef enum : NSUInteger {
     YYLCycleViewPageControlAlimentRight,
     YYLCycleViewPageControlAlimentCenter,
 } YYLCycleViewPageControlAliment;
 
-//分页控件
-typedef enum : NSUInteger {
-    YYLCycleViewPageControlStyleClassic,   //系统自带经典样式
-    YYLCycleViewPageControlStyleAnimated,  //动画效果 pagecontrol
-    YYLCycleViewPageControlStyleNone,      //不显示 pagecontrol
-} YYLCycleViewPageControlStyle;
+@interface YYLCycleCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) UIImageView *imageView;
+
+@property (nonatomic, strong) UILabel *titleLabel;
+
+@end
+
+
+@protocol YYLCycleViewDelegate <NSObject>
+
+- (void)cycleView:(YYLCycleView *)cycleView didSelectItemAtindex:(NSInteger)index;
+
+@end
 
 @interface YYLCycleView : UIView
- 
+
+
+@property (nonatomic, weak) id<YYLCycleViewDelegate> delegate;
+
+/** block方式监听点击 */
+@property (nonatomic, copy) void (^cycleViewDidClickBlock)(NSInteger currentIndex);
+
 /**
  是否自动轮播 默认 Yes
  */
@@ -49,14 +65,7 @@ typedef enum : NSUInteger {
  是否显示分页控件
  */
 @property (nonatomic,assign) BOOL showPageControl;
-    
-
-/**
- pagecontrol 样式 默认为动画样式
- */
-@property (nonatomic,assign) YYLCycleViewPageControlStyle cycleViewPageControlStyle;
-    
-
+ 
 /**
  是否在只有一张图时隐藏 pagecontroler 默认为 YES
  */
@@ -99,34 +108,14 @@ typedef enum : NSUInteger {
  轮播图片的 ContentModel，默认为UIViewContentModeScaleToFill
  */
 @property (nonatomic,assign) UIViewContentMode bannerImageViewContentMode;
-    
-/**
- 轮播文字 label 字体的颜色
- */
-@property (nonatomic, strong) UIColor *titleLabelTextColor;
-    
 
 /**
- 轮播文字 label 背景颜色
+ 占位图， 用于网络未加载到图片时
  */
-@property (nonatomic, strong) UIColor *titlelabelBackgroundColor;
+@property (nonatomic, strong) UIImage *placeholderImage;
     
-
-/**
- 轮播文字 label 字体大小
- */
-@property (nonatomic, strong) UIFont *titleLabelTextFont;
     
-/**
- 轮播文字 label 的高度
- */
-@property (nonatomic, assign) CGFloat titleLabelHeight;
-    
-
-/**
- 轮播文字 label 的对齐方式
- */
-@property (nonatomic, assign) NSTextAlignment titleLabelTextAlignment;
-    
+/**************数据源**************/
+@property (nonatomic, strong) NSArray *imageURLStringsGroup;
 
 @end
